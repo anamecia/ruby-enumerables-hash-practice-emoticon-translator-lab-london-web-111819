@@ -14,7 +14,7 @@ end
 def get_japanese_emoticon (yaml_file_path, emoticon)
   # code goes here
   
-  end
+
   
    
 end
