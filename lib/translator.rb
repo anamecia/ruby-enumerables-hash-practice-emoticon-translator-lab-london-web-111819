@@ -11,9 +11,11 @@ end
 
 'lib/emoticons.yml'
 
-def get_japanese_emoticon
+def get_japanese_emoticon (yaml_file_path, emoticon)
   # code goes here
-   load_library(file)
+  pp load_library(yaml_file_path)
+  
+   
 end
 
 def get_english_meaning
