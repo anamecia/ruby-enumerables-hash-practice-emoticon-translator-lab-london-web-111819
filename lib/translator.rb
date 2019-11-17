@@ -5,7 +5,7 @@ require 'pp'
 def load_library(file_path)
   # code goes here
   emoticons = YAML.load_file(file_path)
-  get_meaning = {}
+  get_meaning = []
   emoticons.each_key{|key| get_meaning << key}
 end
 
