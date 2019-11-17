@@ -8,6 +8,8 @@ def load_library(file_path)
   get_meaning={}
   get_emoticon={}
   emoticons.each do |key,value|
+    pp key
+    pp value
     get_meaning[value[1]] = key
   end  
   {:get_meaning => get_meaning , :get_emoticon =>{} }
