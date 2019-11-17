@@ -33,7 +33,7 @@ def get_english_meaning(yaml_file_path,emoticon)
   meaning_hash = load_library(yaml_file_path)
   result = meaning_hash[:get_meaning][emoticon]
   if result == nil 
-    return 'Sorry, that '
+    return 'Sorry, that emoticon was not found'
   end
   result
 end
