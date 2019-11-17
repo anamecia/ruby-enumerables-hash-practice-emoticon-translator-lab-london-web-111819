@@ -28,6 +28,10 @@ def get_japanese_emoticon (yaml_file_path, emoticon)
   result
 end
 
-def get_english_meaning
+def get_english_meaning(yaml_file_path,emoticon)
   # code goes here
+  meaning_hash = load_library(yaml_file_path)
+  result = meaning_hash[:get_meaning][emoticon]
+  if result == nil 
+    return 'Sorry, that '
 end
