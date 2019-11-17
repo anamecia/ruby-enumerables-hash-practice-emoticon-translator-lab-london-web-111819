@@ -34,4 +34,6 @@ def get_english_meaning(yaml_file_path,emoticon)
   result = meaning_hash[:get_meaning][emoticon]
   if result == nil 
     return 'Sorry, that '
+  end
+  result
 end
