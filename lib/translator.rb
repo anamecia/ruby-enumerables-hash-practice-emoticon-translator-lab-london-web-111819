@@ -13,7 +13,13 @@ end
 
 def get_japanese_emoticon (yaml_file_path, emoticon)
   # code goes here
-  load_library(yaml_file_path).each
+  load_library(yaml_file_path).each do |key,value|
+    if value[0] == emoticon
+      puts value[1]
+    else 
+      puts 'Sorry, '
+    end
+  end
   
    
 end
