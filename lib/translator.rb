@@ -5,7 +5,12 @@ require 'pp'
 def load_library(file_path)
   # code goes here
   emoticons = YAML.load_file(file_path)
-  {:get_meaning =>{} , :get_emoticon =>{} }
+  get_meaning={}
+  get_emoticon={}
+  emoticons.each do |key,value|
+    get_meaning[value[1]] = key
+  end  
+  {:get_meaning => get_meaning , :get_emoticon =>{} }
   
 end
 
