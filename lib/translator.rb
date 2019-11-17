@@ -21,7 +21,7 @@ end
 def get_japanese_emoticon (yaml_file_path, emoticon)
   # code goes here
   emoticons_hash = load_library(yaml_file_path)
-  result = emoticons_hash[:get_meaning][emoticon]
+  result = emoticons_hash[:get_emoticon][emoticon]
   if result == nil 
     return 'Sorry, we do not recognize that emoticon'
   end
