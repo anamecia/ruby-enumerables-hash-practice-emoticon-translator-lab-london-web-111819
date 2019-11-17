@@ -9,7 +9,7 @@ def load_library(file_path)
   get_emoticon={}
   emoticons.each do |key,value|
     get_meaning[value[1]] = key
-    get_emoticon[value[0]] = key
+    get_emoticon[value[0]] = value[1]
   end 
   
   {:get_meaning => get_meaning , :get_emoticon =>get_emoticon }
